@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 17 14:55:23 2021
+# Process ID: 14340
+# Current directory: D:/ProgrammingMonkey/diglogic/flowing_water_lights
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18180 D:\ProgrammingMonkey\diglogic\flowing_water_lights\flowing_water_lights.xpr
+# Log file: D:/ProgrammingMonkey/diglogic/flowing_water_lights/vivado.log
+# Journal file: D:/ProgrammingMonkey/diglogic/flowing_water_lights\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 705.117 ; gain = 97.664
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_1/flowing_water_lights.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights.runs/impl_1/flowing_water_lights.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 17 15:01:49 2021...

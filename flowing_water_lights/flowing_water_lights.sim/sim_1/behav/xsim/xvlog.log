@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights/flowing_water_lights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flowing_water_lights
+INFO: [VRFC 10-2458] undeclared symbol cnt_end, assumed default net type wire [D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights/flowing_water_lights.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ProgrammingMonkey/diglogic/flowing_water_lights/flowing_water_lights/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

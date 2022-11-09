@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 23 09:45:16 2021
+# Process ID: 3716
+# Current directory: D:/ProgrammingMonkey/diglogic/memory_w_r
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13824 D:\ProgrammingMonkey\diglogic\memory_w_r\memory_w_r.xpr
+# Log file: D:/ProgrammingMonkey/diglogic/memory_w_r/vivado.log
+# Journal file: D:/ProgrammingMonkey/diglogic/memory_w_r\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ProgrammingMonkey/diglogic/memory_w_r/memory_w_r.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source testbench.tcl
+run 10 ms
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+close_sim

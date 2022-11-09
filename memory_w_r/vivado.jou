@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 24 13:51:18 2021
+# Process ID: 14344
+# Current directory: D:/ProgrammingMonkey/diglogic/memory_w_r
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8116 D:\ProgrammingMonkey\diglogic\memory_w_r\memory_w_r.xpr
+# Log file: D:/ProgrammingMonkey/diglogic/memory_w_r/vivado.log
+# Journal file: D:/ProgrammingMonkey/diglogic/memory_w_r\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ProgrammingMonkey/diglogic/memory_w_r/memory_w_r.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ProgrammingMonkey/diglogic/memory_w_r/memory_w_r.runs/impl_1/memory_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ProgrammingMonkey/diglogic/memory_w_r/memory_w_r.runs/impl_1/memory_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation
+launch_simulation
+source testbench.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+relaunch_sim
+run 10 s
+relaunch_sim
+run 10 s
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+run 10 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+close_sim

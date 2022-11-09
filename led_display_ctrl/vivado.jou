@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  1 15:22:56 2021
+# Process ID: 13620
+# Current directory: D:/ProgrammingMonkey/diglogic/led_display_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7516 D:\ProgrammingMonkey\diglogic\led_display_ctrl\led_display_ctrl.xpr
+# Log file: D:/ProgrammingMonkey/diglogic/led_display_ctrl/vivado.log
+# Journal file: D:/ProgrammingMonkey/diglogic/led_display_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ProgrammingMonkey/diglogic/led_display_ctrl/led_display_ctrl.xpr
+launch_simulation
+source testbench.tcl
+update_compile_order -fileset sources_1
+run all
+close_sim
